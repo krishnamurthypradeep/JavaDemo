@@ -21,7 +21,7 @@ public class AppConfig {
 	@Bean
 	Student student(List<Address> address) {
 		
-		return new Student("Name3","CS", "7", address);
+		return new Student("Student1","CS", "7", address);
 	}
 	
 	@Bean
@@ -35,20 +35,6 @@ public class AppConfig {
 	}
 	
 	
-	@Bean
-    public MongoClient mongoClient() {
-        ConnectionString connectionString = new ConnectionString("mongodb+srv://admin:admin@infra.drc79cy.mongodb.net/infradb?retryWrites=true&w=majority&appName=infra");
-        MongoClientSettings mongoClientSettings = MongoClientSettings.builder()
-          .applyConnectionString(connectionString)
-          .build();
-        
-        return MongoClients.create(mongoClientSettings);
-    }
-
-    @Bean
-    public MongoTemplate mongoTemplate(MongoClient mongoClient) throws Exception {
-        return new MongoTemplate(mongoClient, "infradb");
-    }
 }
 
 // Spring Core => Beans are manually configured

@@ -20,7 +20,6 @@ import jakarta.persistence.criteria.Predicate;
 import jakarta.persistence.criteria.Root;
 
 
-@Repository
 //@Transactional(propagation = Propagation.REQUIRED,isolation = Isolation.SERIALIZABLE)
 public class StudentRepositoryImpl implements StudentRepository {
 	

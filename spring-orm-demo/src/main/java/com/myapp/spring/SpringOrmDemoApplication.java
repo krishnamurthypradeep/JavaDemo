@@ -18,7 +18,9 @@ public class SpringOrmDemoApplication {
 	StudentRepository repository =	 iocContainer.getBean(StudentRepository.class);
 	
 	Student student =	 iocContainer.getBean(Student.class);
-	//repository.save(student);
+	
+	
+	repository.save(student);
 	
 	
 	
