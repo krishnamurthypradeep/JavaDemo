@@ -33,8 +33,10 @@ public class SpringOrmBootDemo2Application implements CommandLineRunner{
 		repository.findByBranchAndSemester("CS", "5").forEach(System.out::println);
 
 	}
-	
-	
+	// @Component
+	// @Service
+	// @Repository
+	// @ComponentScan
 	
 //	@Bean
 //	CommandLineRunner runner(StudentRepository repository,Student student) {
@@ -48,3 +50,14 @@ public class SpringOrmBootDemo2Application implements CommandLineRunner{
 //	}
 
 }
+
+// ORM 
+// ODM
+// Spring Core
+// Spring Boot
+
+// Spring MVC
+// REST API
+// Microservices
+
+
