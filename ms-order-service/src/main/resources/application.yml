@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: order-ms
+  datasource:
+    url: jdbc:mysql://localhost:3307/testdb
+    
+    hikari:
+      username: root
+      password: 123456
+      
+      maximum-pool-size: 10
+      auto-commit: false
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  port: 0        

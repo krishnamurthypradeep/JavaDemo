@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: product-ms
+  data:
+    mongodb:
+      uri: mongodb+srv://admin:admin@infra.drc79cy.mongodb.net/infradb?retryWrites=true&w=majority&appName=infra
+    
+server:
+  port: 0  
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.value}        

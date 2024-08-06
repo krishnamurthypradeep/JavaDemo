@@ -6,17 +6,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class MsProductServiceApplication {
+public class MsGatewayServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MsProductServiceApplication.class, args);
+		SpringApplication.run(MsGatewayServiceApplication.class, args);
 	}
 
 }
-
-
-// Load Balancing
-// Dynamic Routing
-// Security
-// Request/Response Transformation
-// Circuit Breaking

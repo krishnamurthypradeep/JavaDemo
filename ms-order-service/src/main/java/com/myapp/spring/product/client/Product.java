@@ -1,12 +1,8 @@
-package com.myapp.spring.domain;
+package com.myapp.spring.product.client;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-
-@Document(collection = "products")
 public class Product {
 	
-	@Id
+
 	private String id;
 
 	private String productName;
